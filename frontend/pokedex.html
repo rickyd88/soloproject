@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width-device-width, initial-sale-1.0">
+        <title> CS Pokedex </title>
+
+        <link rel = "stylesheet" href = "pokedex.css">
+
+    </head>
+
+    <body>
+        <div id="content-box">
+            <!-- everything below is to display on the leftside -->
+            <div id="pokemon-info">
+                <img id="pokemon-img">
+                <div id="pokemon-types">
+                    <span class="type-box grass"> GRASS</span><span class="type-box poison">POISON</span>
+                </div>
+                <div id="pokemon-description"></div>
+            </div>
+                <!-- everything below is to display on the right side -->
+                <div id="pokemon-list"></div>
+        </div>
+        <div id="pokemonCardContainer">
+            <!-- <input type="file" id="fileInput" accept="image/*">
+            <div id="imageContainer">
+                <img id="existingImage" src="pictures/Vstar blank card.png">
+            </div>
+            <div id="pokemonCard">POKEMON CARD GOES HERE</div> -->
+            <form id="pokemonForm">
+                <input type="file" id="fileInput" accept="image/*" required> <br>
+                <input type="text" id="pokemonType" placeholder="Pokemon Type" required> <br>
+                <textarea id="pokemonDescription" placeholder="Pokemon Description" required></textarea> <br>
+                <input type="text" id="pokemonName" placeholder="Pokemon Name" required> <br>
+                <button type="submit">Create Pokemon Card</button>
+            </form>
+        </div>
+        <script src="pokedex.js"></script>
+        <!-- <script src="server.js"></script> -->
+    </body>
+
+</html>

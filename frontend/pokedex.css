@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    background-image: url('https://st2.depositphotos.com/7507618/12045/v/450/depositphotos_120454410-stock-illustration-pokeball-seamless-pattern.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    /* Set background properties */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+#content-box {
+    width: 500px;
+    height: 500px;
+    border: 10px solid lightgray;
+    border-radius: 10px;
+    background-color: rgb(43, 46, 46);
+    margin-top: 60 px;
+    display: flex;
+}
+
+#pokemon-info {
+    width: 250px;
+    height: 500 px;
+    background-color: yellow;
+    text-align: center;
+    
+}
+
+#pokemon-list {
+    width: 250px;
+    height: 500px;
+    background-color: crimson;
+    font-size: 18px;
+    overflow-y: auto;
+}
+
+.pokemon-name {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#pokemon-info img {
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+#pokemon-types {
+    margin-top: 10px;
+}
+
+.type-box {
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgb(133, 119, 119);
+}
+
+#pokemon-description {
+    width: 230px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 2px;
+    font-size: 18px;
+    overflow-y: auto;
+}
+
+/* #pet-content {
+    width: 500px;
+    height: 500px;
+    border: 10px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 60 px;
+    display: flex;
+} */
+
+#imagecontainer {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+#imageContainer img {
+    z-index: 100;
+    display: flex;
+    max-width: 100%; 
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .pokemon-card {
+    border: 1px solid #020202;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+.pokemon-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+#pokemonCardContainer {
+    width: 500px;
+    height: 500px;
+    border: 10px solid lightgray;
+    border-radius: 10px;
+    background-color: darkgray;
+    margin-top: 60 px;
+    display: flex;
+}
+
+#pokemonForm {
+    
+}
