@@ -171,6 +171,7 @@ async function savePokemonCardToDatabase(file, type, desc, name) {
         }
 
         const responseData = await response.json();
+
         console.log(responseData.message); // Log success message
     } catch (error) {
         console.error('Error saving Pokémon card to database:', error);

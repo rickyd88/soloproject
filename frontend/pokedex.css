@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-around;
-    background-image: url('https://st2.depositphotos.com/7507618/12045/v/450/depositphotos_120454410-stock-illustration-pokeball-seamless-pattern.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-image: url('https://st2.depositphotos.com/7507618/12045/v/450/depositphotos_120454410-stock-illustration-pokeball-seamless-pattern.jpg'); 
     /* Set background properties */
     background-size: cover; /* Cover the entire viewport */
     background-repeat: no-repeat; /* Do not repeat the background image */
@@ -21,7 +21,7 @@ body {
 #pokemon-info {
     width: 250px;
     height: 500 px;
-    background-color: yellow;
+    background-color: tan;
     text-align: center;
     
 }
@@ -124,8 +124,20 @@ body {
     background-color: darkgray;
     margin-top: 60 px;
     display: flex;
+    overflow: auto;
 }
 
-#pokemonForm {
-    
-}
+#createPokemonCardButton {
+    background-color: red; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+  }
