@@ -152,17 +152,18 @@ function displayPokemonCard(imgData, type, desc, name) {
 async function savePokemonCardToDatabase(file, type, desc, name) {
     console.log("Save Pokemon cards is working!")
     try {
-        const formData = new FormData();
-        formData.append('name', name);
-        formData.append('type', type);
-        formData.append('desc', desc);
+            const pokemonData = {
+                name: name,
+                type: type,
+                desc: desc
+            }
 
         const response = await fetch('/pokemon', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: formData
+            body: JSON.stringify(pokemonData)
         });
 
         if (!response.ok) {
